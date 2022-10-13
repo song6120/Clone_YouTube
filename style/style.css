@@ -228,6 +228,7 @@ button
     left: 240px;
     right: 9px;
     background: #ffff;
+    overflow-y: scroll;
     z-index: 2;
 }
 #category button
@@ -253,6 +254,8 @@ button
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: absolute;
+    left: 0;
     width: 100%;
 }
 #content
