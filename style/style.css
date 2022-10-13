@@ -240,6 +240,7 @@ button
     border-radius: 16px;
     background: #f2f2f2;
     margin-left: 12px;
+    white-space: nowrap;
 }
 #category button a
 {
