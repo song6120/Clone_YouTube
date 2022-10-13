@@ -10,7 +10,7 @@
     <link rel="icon" href="./style/img/youtube-logo-2431.png">
 </head>
 <body>
-    <div class="header">
+    <div id="header">
         <div class="logo">
             <button class="btn_bar" onclick="MyConvert()"><i class="icon fa-solid fa-bars"></i></button>
             <a href="#"><img src="./style/img/logo.png" alt=""></a>
@@ -29,7 +29,7 @@
             <button class="btn-account"><img src="./style/img/account.jpg" alt=""></button>
         </div>
     </div>
-    <div class="menu">
+    <div id="menu">
         <div class="sidebar-chill">
             <ul>
                 <li style="background: #e4e4e4;"><a href="#"><i class="icon fa-solid fa-house"></i> Trang chủ</a></li>
@@ -109,8 +109,8 @@
                 </div>
             </div>
         </div>
-        <div class="contents">
-            <div class="category">
+        <div id="contents">
+            <div id="category">
                 <div class="category-box">
                     <button><a href="#">Tất cả</a></button>
                     <button><a href="#">Âm nhạc</a></button>
@@ -125,7 +125,7 @@
                     <button><a href="#">Đề xuất mới</a></button>
                 </div>
             </div>
-            <div class="content">
+            <div id="content">
                 <div class="content-chill">
                     <div class="content-item">
                         <button>
@@ -411,6 +411,10 @@
         function MyConvert(){
             var x = document.body;
             x.classList.toggle("MYConvert");
+        }
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("mysidebar");
         }
     </script>
 </body>

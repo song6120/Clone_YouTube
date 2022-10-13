@@ -16,7 +16,7 @@ button
 {
     cursor: pointer;
 }
-.header
+#header
 {
     height: 56px;
     padding: 0 16px;
@@ -59,21 +59,21 @@ button
     flex-direction: row;
     align-items: center;
 }
-.header .search .search-form i
+#header .search .search-form i
 {
     margin-right: 5px;
 }
-.header .search input
+#header .search input
 {
     border: none;
 }
-.header .logo img
+#header .logo img
 {
     width: 120px;
     height: 56px;
     padding: 0 14px 0 18px;
 }
-.header .logo .btn_bar
+#header .logo .btn_bar
 {
     width: 40px;
     height: 40px;
@@ -96,16 +96,16 @@ button
     background: #f8f8f8;
     border: 1px solid #e5e5e5;
 }
-.header .search .btn_search:hover
+#header .search .btn_search:hover
 {
     background: #f2f2f2;
 }
-.header .search .btn_keyboard
+#header .search .btn_keyboard
 {
     border: none;
     background: #ffff;
 }
-.header .search .btn_keyboard i:hover
+#header .search .btn_keyboard i:hover
 {
     color: #838282;
 }
@@ -121,7 +121,7 @@ button
     border-radius: 50%;
     border: none;
 }
-.menu
+#menu
 {
     display: flex;
     flex-direction: row;
@@ -180,7 +180,7 @@ button
 {
     margin-right: 24px;
 }
-.header .account
+#header .account
 {
     width: 225px;
     display: flex;
@@ -188,26 +188,26 @@ button
     align-items: center;
     justify-content: flex-end;
 }
-.header .account .btn-icon
+#header .account .btn-icon
 {
     width: 40px;
     height: 40px;
     margin-right: 8px;
     background: none;
 }
-.header .account .btn-account
+#header .account .btn-account
 {
     width: 60px;
     height: 34px;
     background: none;
 }
-.header .account .btn-account img
+#header .account .btn-account img
 {
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
-.menu .contents
+#menu #contents
 {
     display: flex;
     flex-direction: row;
@@ -215,7 +215,7 @@ button
     border-left: none;
     border-right: none;
 }
-.category
+#category
 {
     height: 58px;
     border: 1px solid #e5e5e5;
@@ -230,7 +230,7 @@ button
     background: #ffff;
     z-index: 2;
 }
-.category button
+#category button
 {
     border: none;
     text-decoration: none;
@@ -241,20 +241,20 @@ button
     background: #f2f2f2;
     margin-left: 12px;
 }
-.category button a
+#category button a
 {
     text-decoration: none;
     color: #030303;
     font-size: 14px;
 }
-.category .category-box
+#category .category-box
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
 }
-.content
+#content
 {
     background: #f9f9f9;
     margin-left: 240px;
@@ -435,23 +435,32 @@ button
 {
     display: block;
 }
-.MYConvert .category
+.MYConvert #category
 {
     left: 72px;
 }
-.MYConvert .content
+.MYConvert #content
 {
     margin-left: 72px;
+}
+.mysidebar 
+{
+    text-align:left;
+    margin-top: 56px;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    bottom: 0;
 }
 @media(max-width: 1313px) {
     .sidebar_2,.sidebar_4,.sidebar_3,.sidebar_5, .footer{
         display: none;
         border: none;
     }
-    .content{
+    #content{
         margin-left: 72px;
     }
-    .category{
+    #category{
         left: 72px;
     }
     .sidebar ul
@@ -506,10 +515,10 @@ button
     }
 }
 @media(max-width: 791px) {
-    .content{
+    #content{
         margin-left: 0;
     }
-    .category{
+    #category{
         left: 0;
     }
 }
